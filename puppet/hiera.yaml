@@ -1,0 +1,11 @@
+---
+:backends:
+  - yaml
+
+:hierarchy:
+  - "instances/%{::instance}"
+  - "roles/%{::role}"
+  - default
+
+:yaml:
+  :datadir: /etc/puppet/hiera
